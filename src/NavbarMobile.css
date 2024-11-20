@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&display=swap");
+
+.footer_container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+.footer_form {
+  width: max-content;
+  flex: 1;
+  padding: 2rem;
+}
+
+.footer_form img {
+  height: 5rem;
+  width: auto;
+}
+
+.footer_form form {
+  display: block;
+}
+
+.footer_container p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.form_link_div {
+  display: flex;
+  flex: 1;
+}
+
+.footer_form form input {
+  display: block;
+  background: transparent;
+  padding: 0.5rem;
+  border-bottom: 1px solid #47586a;
+  margin: 1rem 0;
+  outline: none;
+  width: 90%;
+}
+
+.footer_form form textarea {
+  display: block;
+  background: transparent;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid #47586a;
+  margin: 1rem 0;
+  outline: none;
+  width: 90%;
+}
+
+.footer_container form textarea {
+  resize: none;
+  height: 50px;
+}
+
+.footer_container form input:focus,
+textarea:focus {
+  border-color: #6accc7;
+}
+
+.footer_links {
+  flex: 1.2;
+  border-left: 2px solid rgb(221 214 254 / 0.2);
+}
+
+.footer_links .krklogo {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_links img {
+  height: 10vh;
+  width: auto;
+  margin: 2rem;
+}
+
+.footer_links .q_links {
+  padding: 1rem 2rem;
+  border-top: 1px solid rgb(221 214 254 / 0.2);
+}
+
+.footer_links .q_links .links_flex {
+  display: flex;
+}
+
+.footer_links .q_links .links {
+  padding: 0 1rem;
+}
+
+.footer_links .q_links .links_flex .links a {
+  display: block;
+  padding: 0.1rem;
+  color: rgb(221 214 254 / 0.7);
+}
+
+.footer_links .q_links .links_flex .links a:hover {
+  color: #d4d1d1;
+  text-decoration: underline;
+}
+
+.footer_contact {
+  flex: 1;
+  border-left: 2px solid rgb(221 214 254 / 0.2);
+}
+
+.fc_top {
+  padding: 2rem;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.fc_top a {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+  padding: 0.1rem;
+  width: fit-content;
+}
+
+.fc_top a:hover {
+  color: #6accc7;
+  border-color: #6accc7;
+}
+
+.footer_contact .contact_us {
+  padding: 1rem 2rem;
+  overflow: hidden;
+  border-top: 1px solid rgb(221 214 254 / 0.2);
+}
+
+.footer_contact .contact_us p {
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.footer_bottom {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 300;
+  display: flex;
+}
+
+.copyrights {
+  display: flex;
+  align-items: center;
+}
+
+.fb_right {
+  margin-left: auto;
+  order: 2;
+}
+
+.k_text {
+  font-family: "Mukta", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  -webkit-text-stroke: 0.03em #ccfbf1;
+}
+
+textarea {
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: rgb(180, 180, 180);
+}
+
+textarea::-webkit-scrollbar {
+  width: 6px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: rgb(248, 240, 240);
+}
+
+@media (max-width: 950px) {
+  .footer_container {
+    display: block;
+  }
+
+  .form_link_div {
+    border-bottom: 1px solid rgb(221 214 254 / 0.2);
+  }
+
+  .footer_links .q_links .links_flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .footer_contact .contact_us .contact_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 660px) {
+  .form_link_div {
+    display: block;
+  }
+
+  .footer_form {
+    width: 100%;
+  }
+
+  .krklogo {
+    display: none !important;
+  }
+
+  .footer_links,
+  .footer_contact {
+    border-left: none;
+  }
+
+  .fc_top a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer_form,
+  .q_links,
+  .fc_top,
+  .footer_bottom {
+    padding: 1rem !important;
+  }
+
+  .fc_top a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer_form img {
+    width: auto;
+  }
+
+  .footer_contact .contact_us .contact_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 300px) {
+  .fc_top a {
+    font-size: 1rem;
+  }
+}

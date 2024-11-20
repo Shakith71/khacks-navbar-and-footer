@@ -1,9 +1,17 @@
-import React from 'react';
-import './App.css'
+import React, { useState } from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Foot from "./Foot";
+import "./App.css";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <h1 className='text-5xl font-bold p-5'>K! Hacks 2.0</h1>
+    <div>
+      <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <div className={`appStyle ${isMenuOpen ? "hidden" : ""}`}><Foot isMenuOpen={isMenuOpen} /></div>
+    </div>
   );
 }
 

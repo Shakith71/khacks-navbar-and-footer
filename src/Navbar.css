@@ -1,0 +1,108 @@
+/* In your index.css or a specific CSS file */
+.gradient-border {
+    /* Use background gradient for the visible border effect */
+    background:    
+        linear-gradient(35deg, transparent 12px, #0f71cd 0) bottom left / 50% 100% no-repeat,   
+        linear-gradient(-35deg, transparent 12px, #0f71cd 0) bottom right / 50% 100% no-repeat;
+    
+    /* Define clip-path for the cut corner effect */
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 85% 0%, 100% 10%, 100% 0, 0% 0);
+    
+    /* Border properties */
+     /* Remove actual border if not needed */
+    /* padding: 12px;  */
+    
+    position: relative;
+    max-width: 1057px;
+    height: 53px;
+    margin-top: 90px;
+    margin-left: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+.join{
+    background-color: #35b3e0;
+    color:#132ea7;
+    padding: 0 10px;
+}
+ul{
+    display: flex;
+    color: #bceef7;
+    width: 100%;
+    
+}
+nav ul li {
+    list-style: none; /* Remove bullet points */
+    flex-grow: 1; 
+    text-align: center; /* Center text in each item */
+}
+
+.ham{
+    /* display: none; */
+    position: absolute;
+    top: 0.7rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+    z-index: 100;
+}
+
+.ham span{
+    height: 0.4rem;
+    width: 100%;
+    background-color: #132ea7;
+    border-radius: 0.2rem;
+}
+.open{
+    display: none;
+}
+.navContainer{
+    height: 100vh;
+}
+@media(max-width:780px) {
+   .ham{
+    display: flex;
+   }
+   
+   .gradient-border{
+    display: none;
+   }
+  
+   .open{
+    display: flex;
+    justify-content: end;
+    height: 100vh;
+   }
+   .uList{
+    background-color: #0f71cd;
+   }
+   .burger{
+    display: none;
+   }
+   .cross{
+    position: absolute;
+    top:0;
+    right: 0;
+    margin: 5px 2px 0 0;
+    font-size: 2rem;
+    color: rgb(124, 117, 117);
+   }
+   .open{
+    background: rgba(27, 139, 173, 0.25);
+box-shadow: 0 8px 32px 0 rgba(21, 33, 206, 0.37);
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba(214, 178, 178, 0.18);  
+height: 100%;
+   }
+   
+}
